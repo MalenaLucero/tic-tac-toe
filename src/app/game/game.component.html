@@ -1,0 +1,37 @@
+<div [className]="'gameContainer'">
+    <div [className]="'game'">
+        <div [className]="'gameCell'" (click)="fillCell(0)">
+            <div id="0">{{cells[0]}}</div>
+        </div>
+        <div [className]="'gameCell'" (click)="fillCell(1)">
+            <div id="1">{{cells[1]}}</div>
+        </div>
+        <div [className]="'gameCell'" (click)="fillCell(2)">
+            <div id="2">{{cells[2]}}</div>
+        </div>
+        <div [className]="'gameCell'" (click)="fillCell(3)">
+            <div id="3">{{cells[3]}}</div>
+        </div>
+        <div [className]="'gameCell'" (click)="fillCell(4)">
+            <div id="4">{{cells[4]}}</div>
+        </div>
+        <div [className]="'gameCell'" (click)="fillCell(5)">
+            <div id="5">{{cells[5]}}</div>
+        </div>
+        <div [className]="'gameCell'" (click)="fillCell(6)">
+            <div id="6">{{cells[6]}}</div>
+        </div>
+        <div [className]="'gameCell'" (click)="fillCell(7)">
+            <div id="7">{{cells[7]}}</div>
+        </div>
+        <div [className]="'gameCell'" (click)="fillCell(8)">
+            <div id="8">{{cells[8]}}</div>
+        </div>
+    </div>
+    <div>
+        <p>{{currentPlayer}} won! Congratulations!</p>
+    </div>
+    <div [className]="'newGameBtnContainer'">
+        <button (click)="newGame()">New game</button>
+    </div>
+</div>

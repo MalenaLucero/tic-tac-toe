@@ -1,0 +1,25 @@
+.gameContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .game{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    justify-items: stretch;
+        .gameCell{
+            border: 1px solid grey;
+            align-self: stretch;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            div{
+                text-align: center;
+            }
+        }
+    }
+    .newGameBtnContainer{
+        display: block;
+    }
+}
+
